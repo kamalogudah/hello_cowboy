@@ -5,7 +5,14 @@
 -export([stop/1]).
 
 start(_Type, _Args) ->
-	hello_cowboy_sup:start_link().
+	Dispatch = cowboy_router:compile([
+    {'_', [{"/", hello_handler, []}]}
+	]),
+	{ok, _} = cowboy:start_clear(my_http_listner,
+			 [{port, 8080}],
+			 #{env => #{dispatch => Dispatch}}
+			),
+			hello_cowboy_sup:start_link().
 
 stop(_State) ->
 	ok.
