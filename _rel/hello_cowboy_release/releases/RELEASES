@@ -1,0 +1,8 @@
+%% coding: utf-8
+[{release,"hello_cowboy_release","1","9.2",
+          [{kernel,"5.4.1","./lib/kernel-5.4.1"},
+           {stdlib,"3.4.3","./lib/stdlib-3.4.3"},
+           {hello_cowboy,"0.1.0","./lib/hello_cowboy-0.1.0"},
+           {sasl,"3.1.1","./lib/sasl-3.1.1"},
+           {runtime_tools,"1.12.3","./lib/runtime_tools-1.12.3"}],
+          permanent}].
