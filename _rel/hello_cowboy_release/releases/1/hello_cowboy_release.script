@@ -1,5 +1,5 @@
 %% coding: utf-8
-%% script generated at {2018,5,18} {20,13,3}
+%% script generated at {2018,5,18} {20,21,25}
 {script,
     {"hello_cowboy_release","1"},
     [{preLoaded,
@@ -81,7 +81,7 @@
           cowboy_sub_protocol,cowboy_sup,cowboy_tls,cowboy_tracer_h,
           cowboy_websocket]},
      {path,["$ROOT/lib/hello_cowboy-0.1.0/ebin"]},
-     {primLoad,[hello_cowboy_app,hello_cowboy_sup]},
+     {primLoad,[hello_cowboy_app,hello_cowboy_sup,hello_handler]},
      {path,["$ROOT/lib/sasl-3.1.1/ebin"]},
      {primLoad,
          [alarm_handler,erlsrv,format_lib_supp,misc_supp,rb,rb_format_supp,
@@ -302,7 +302,7 @@
                   [{description,"New project"},
                    {vsn,"0.1.0"},
                    {id,[]},
-                   {modules,[hello_cowboy_app,hello_cowboy_sup]},
+                   {modules,[hello_cowboy_app,hello_cowboy_sup,hello_handler]},
                    {registered,[hello_cowboy_sup]},
                    {applications,[kernel,stdlib,cowboy]},
                    {included_applications,[]},
